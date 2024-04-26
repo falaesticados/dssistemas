@@ -44,6 +44,7 @@
                              $endereco = $linha['endereco'];
                              $telefone = $linha['telefone'];
                              $data = $linha['data'];
+                             $data = mostra_data($data);
                              $email = $linha['email'];
 
                              echo "<tr>
@@ -54,7 +55,7 @@
                              <td>$data</td>
                              <td>$email</td>
                              <td width=150px>
-                               <a href='#' class='btn btn-success btn-sm'>Editar</a>
+                               <a href='editcad.php' class='btn btn-success btn-sm'>Editar</a>
                                <a href='#' class='btn btn-danger btn-sm'>Excluir</a>
                                </td>
 
